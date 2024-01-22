@@ -1,0 +1,26 @@
+@import '_common.scss';
+
+.accordion {
+    width: 100%;
+    
+    .accordion-button {
+        width: 100%;
+        text-align: left;
+        padding: 15px 30px;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        border-radius: 4px;
+    }
+    .accordion-body {
+        display: none;
+        margin-top: 5px;
+        padding: 15px 30px 20px;
+        background-color: lighten($primary-color, 43%);
+        border-radius: 4px;
+    }
+    &.show {
+        .accordion-body {
+            display: block;
+        }
+    }
+}
