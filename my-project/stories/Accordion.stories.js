@@ -6,4 +6,3 @@ export default {
   };
 
   export const Default = createAccordion;
-  // export const Default = () => '<div class="accordion"></div>'

@@ -1,0 +1,54 @@
+@import  '_common.scss';
+
+.alert {
+    width: 100%;
+    border: 1px solid $default-color;
+    border-radius: 4px;
+    padding: 15px;
+
+    &.alert-default {
+        background-color: lighten($default-color, 30%);
+    }
+
+    &.alert-primary {
+        background-color: lighten($primary-color, 30%);
+        border-color: $primary-color;
+    }
+
+    &.alert-primary {
+        background-color: lighten($primary-color, 30%);
+        border-color: $primary-color;
+    }
+
+    &.alert-success {
+        background-color: lighten($success-color, 30%);
+        border-color: $success-color;
+    }
+
+    &.alert-danger {
+        background-color: lighten($danger-color, 30%);
+        border-color: $danger-color;
+    }
+
+    &.alert-warning {
+        background-color: lighten($warning-color, 30%);
+        border-color: $warning-color;
+    }
+
+    &.alert-info {
+        background-color: lighten($info-color, 30%);
+        border-color: $info-color;
+    }
+
+    &.alert-light {
+        background-color: $light-color;
+        border-color: darken($light-color, 30%);
+    }
+
+    &.alert-dark {
+        background-color: lighten($dark-color, 30%);
+        border-color: $dark-color;
+        color: #fff;
+    }
+
+}
