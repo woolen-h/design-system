@@ -1,11 +1,11 @@
 import './assets/css/accordion.css';
 
 export const createAccordion = () => {
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', () => {
         const accordionButtons = document.querySelectorAll('.accordion-button');
       
         accordionButtons.forEach(function (button) {
-          button.addEventListener('click', function () {
+          button.addEventListener('click', () => {
             const accordionContent = this.nextElementSibling.querySelector('.accordion-content');
             const accordionItem = this.parentElement;
               const openItem = document.querySelector('.accordion-item.open');

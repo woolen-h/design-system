@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -171,6 +172,37 @@ input:-webkit-autofill:active {
   box-shadow: inset 175px 0 0 0 #888;
   color: #fff;
 }
+.btn.diagonal-swipe-btn {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background-color: #888;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+.btn.diagonal-swipe-btn span {
+  position: relative;
+  z-index: 2;
+}
+.btn.diagonal-swipe-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150%;
+  height: 160%;
+  background-color: #168BF2;
+  z-index: 1;
+  transform-origin: bottom left;
+  transform: skew(40deg) translateX(-92%) translateY(40%);
+  transition: all 0.5s ease-in-out;
+}
+.btn.diagonal-swipe-btn:hover::after {
+  transform: skew(40deg) translateX(0) translateY(10%);
+}
 .btn.bubble-btn {
   position: relative;
   overflow: hidden;
@@ -284,6 +316,42 @@ input:-webkit-autofill:active {
 }
 .btn.border-03-btn:hover:after {
   width: 100%;
+}
+.btn.border-04-btn {
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #888;
+  position: relative;
+}
+.btn.border-04-btn::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 7%;
+  height: 25%;
+  background-color: transparent;
+  border-top: 1px solid #888;
+  border-left: 1px solid #888;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.btn.border-04-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 7%;
+  height: 25%;
+  background-color: transparent;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  transition: 0.3s ease;
+}
+.btn.border-04-btn:hover::before, .btn.border-04-btn:hover::after {
+  width: calc(100% + 9px);
+  height: calc(100% + 9px);
 }
 .btn.shadow-btn {
   background: #fff;
@@ -411,13 +479,13 @@ input:-webkit-autofill:active {
   height: 100%;
   border: 2px solid #888;
 }
-.btn.icon-btn {
+.btn.icon-animate-btn {
   position: relative;
   border: 0;
   width: 150px;
   padding: 0;
 }
-.btn.icon-btn .circle {
+.btn.icon-animate-btn .circle {
   display: block;
   position: relative;
   width: 40px;
@@ -426,7 +494,7 @@ input:-webkit-autofill:active {
   background: #888;
   transition: 0.5s;
 }
-.btn.icon-btn .circle .icon {
+.btn.icon-animate-btn .circle .icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -434,7 +502,7 @@ input:-webkit-autofill:active {
   margin: auto;
   background: #fff;
 }
-.btn.icon-btn .circle .icon.arrow {
+.btn.icon-animate-btn .circle .icon.arrow {
   top: 20px;
   left: 18px;
   width: 20px;
@@ -442,7 +510,7 @@ input:-webkit-autofill:active {
   background: none;
   transition: 0.5s;
 }
-.btn.icon-btn .circle .icon.arrow:before {
+.btn.icon-animate-btn .circle .icon.arrow:before {
   position: absolute;
   top: -30%;
   left: -30%;
@@ -453,7 +521,7 @@ input:-webkit-autofill:active {
   border-right: 3px solid #fff;
   transform: rotate(45deg);
 }
-.btn.icon-btn .btn-text {
+.btn.icon-animate-btn .btn-text {
   position: absolute;
   width: 100%;
   top: -2px;
@@ -464,20 +532,58 @@ input:-webkit-autofill:active {
   padding: 13px 0;
   transition: 0.5s;
 }
-.btn.icon-btn .btn-text:hover {
+.btn.icon-animate-btn .btn-text:hover {
   margin-left: 18px;
 }
-.btn.icon-btn:hover {
+.btn.icon-animate-btn:hover {
   background-color: transparent;
 }
-.btn.icon-btn:hover .circle {
+.btn.icon-animate-btn:hover .circle {
   width: 100%;
 }
-.btn.icon-btn:hover .circle .icon.arrow {
+.btn.icon-animate-btn:hover .circle .icon.arrow {
   transform: translate(10px, 0);
 }
-.btn.icon-btn:hover .btn-text {
+.btn.icon-animate-btn:hover .btn-text {
   color: #fff;
+}
+.btn.icon-only-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-color: #168BF2;
+  margin: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.btn.icon-only-btn i {
+  position: relative;
+  top: 5%;
+  color: #168BF2;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.btn.icon-only-btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 100%;
+  left: -100%;
+  background-color: #168BF2;
+  rotate: 45deg;
+  transition: 0.5s ease;
+}
+.btn.icon-only-btn:hover i {
+  color: #fff;
+}
+.btn.icon-only-btn:hover::before {
+  top: -10%;
+  left: 0;
 }
 .btn.outline {
   background-color: transparent;

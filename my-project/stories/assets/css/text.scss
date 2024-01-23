@@ -1,0 +1,35 @@
+@import '_common.scss';
+
+.text-container {
+    font-size: 36px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+
+    .text {
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(227,114,89,.6);
+        transition: .1s ease;
+        transition-delay: .25s;
+    }
+
+    .hover-text {
+        position: absolute;
+        inset: 0;
+        width: 0%;
+        color: #E37259;
+        overflow: hidden;
+        border-right: 6px solid #E37259;
+        transition: .5s ease-in-out;
+    }
+
+    &:hover {
+        .hover-text {
+            width: 100%;
+            filter: drop-shadow(0 0 10px #E37259);
+        }
+        .text {
+            -webkit-text-stroke: 1px rgba(227,114,89,0);
+        }
+    }
+}

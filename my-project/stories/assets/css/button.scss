@@ -1,4 +1,5 @@
 @import '_common.scss';
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 .btn {
     padding: 15px 30px;
@@ -98,6 +99,42 @@
             // 내부 box-shadow로 왼쪽에서 swipe 효과
             color: #fff;
         }
+    }
+    &.diagonal-swipe-btn {
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      background-color: $default-color;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+      z-index: 0;
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 150%;
+        height: 160%;
+        background-color: $primary-color;
+        z-index: 1;
+        transform-origin: bottom left;
+        transform: skew(40deg) translateX(-92%) translateY(40%);
+        transition: all .5s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          transform: skew(40deg) translateX(0) translateY(10%);
+        }
+      }
     }
     &.bubble-btn {
         position: relative;
@@ -233,6 +270,48 @@
                 width: 100%;
               }
             }
+        }
+        &-04-btn {
+          border: 0;
+          border-radius: 0;
+          color: #fff;
+          background-color: $default-color;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 7%;
+            height: 25%;
+            background-color: transparent;
+            border-top: 1px solid $default-color;
+            border-left: 1px solid $default-color;
+            overflow: hidden;
+            transition: .3s ease;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 7%;
+            height: 25%;
+            background-color: transparent;
+            border-bottom: 1px solid $default-color;
+            border-right: 1px solid $default-color;
+            transition: .3s ease;
+          }
+
+          &:hover {
+            &::before,
+            &::after {
+              width: calc(100% + 9px);
+              height: calc(100% + 9px);
+            }
+          }
         }
     }
     &.shadow-btn {
@@ -374,7 +453,7 @@
           }
         }
     }
-    &.icon-btn {
+    &.icon-animate-btn {
         position: relative;
         border: 0;
         width: 150px;
@@ -450,6 +529,50 @@
             color: #fff;
           }
         }
+    }
+    &.icon-only-btn {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-color: $primary-color;
+      margin: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+
+      i {
+        position: relative;
+        top: 5%;
+        color: $primary-color;
+        font-size: 2rem;
+        transition: all .2s;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: 100%;
+        left: -100%;
+        background-color: $primary-color;
+        rotate: 45deg;
+        transition: .5s ease;
+      }
+
+      &:hover {
+        i {
+          color: #fff;
+        }
+
+        &::before {
+          top: -10%;
+          left: 0;
+        }
+      }
     }
     &.outline {
         background-color: transparent;

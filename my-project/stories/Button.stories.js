@@ -164,6 +164,15 @@ export default {
     borderColor: "",
   };
   
+  export const DiagonalSwipe = Template.bind({});
+  DiagonalSwipe.args = {
+    state: "diagonal-swipe",
+    label: "<span>Diagonal Swipe Button</span>",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
   export const Bubble = Template.bind({});
   Bubble.args = {
     state: "bubble",
@@ -195,6 +204,15 @@ export default {
   Border_03.args = {
     state: "border-03",
     label: "Border Button 03",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Border_04 = Template.bind({});
+  Border_04.args = {
+    state: "border-04",
+    label: "Border Button 04",
     backgroundColor: "",
     border: "",
     borderColor: "",
@@ -247,10 +265,19 @@ export default {
     borderColor: "",
   };
   
-  export const Icon = Template.bind({});
-  Icon.args = {
-    state: "icon",
+  export const Icon_Animate = Template.bind({});
+  Icon_Animate.args = {
+    state: "icon-animate",
     label: "<span class='circle'><span class='icon arrow'></span></span><span class='btn-text'>Icon Button</span>",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Icon_Only = Template.bind({});
+  Icon_Only.args = {
+    state: "icon-only",
+    label: "<i class='fi fi-sr-heart'></i>",
     backgroundColor: "",
     border: "",
     borderColor: "",

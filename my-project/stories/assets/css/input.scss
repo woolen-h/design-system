@@ -1,0 +1,36 @@
+@import '_common.scss';
+
+.text-box {
+    > label {
+        position: absolute;
+        left: 30px;
+        color: $default-color;
+        transform: translateY(15px);
+        transition: all .2s;
+    }
+
+    > input {
+        all: unset;
+        width: 230px;
+        height: 38px;
+        padding: 5px 5px 5px 10px;
+        border-radius: 5px;
+        color: $default-color;
+        border: 1px solid $default-color;
+
+        &:focus,
+        &:valid {
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+
+        &:focus ~ label,
+        &:valid ~ label {
+            transform: translateY(-9px);
+            background-color: #fff;
+            padding-left: 7px;
+            padding-right: 5px;
+            color: $primary-color;
+        }
+    }
+}
