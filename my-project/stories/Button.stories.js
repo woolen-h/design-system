@@ -1,32 +1,257 @@
+import { createButton } from "./Button";
 import './assets/css/button.css';
 
 export default {
-    title: 'Example/Button'
+    title: 'Components/Button'
   };
-  export const Default = () => '<button class="btn">Default Button</button>'
-  export const Primary = () => '<button class="btn primary-btn">Primary Button</button>'
-  export const Success = () => '<button class="btn success-btn">Success Button</button>'
-  export const Danger = () => '<button class="btn danger-btn">Danger Button</button>'
-  export const Warning = () => '<button class="btn warning-btn">Warning Button</button>'
-  export const Info = () => '<button class="btn info-btn">Info Button</button>'
-  export const Light = () => '<button class="btn light-btn">Light Button</button>'
-  export const Dark = () => '<button class="btn dark-btn">Dark Button</button>'
-  export const Link = () => '<button class="btn link-btn">Link Button</button>'
-  export const Outline_Primary = () => '<button class="btn outline primary-btn">Primary Button</button>'
-  export const Outline_Success = () => '<button class="btn outline success-btn">Success Button</button>'
-  export const Outline_Danger = () => '<button class="btn outline danger-btn">Danger Button</button>'
-  export const Outline_Warning = () => '<button class="btn outline warning-btn">Warning Button</button>'
-  export const Outline_Info = () => '<button class="btn outline info-btn">Info Button</button>'
-  export const Outline_Light = () => '<button class="btn outline light-btn">Light Button</button>'
-  export const Outline_Dark = () => '<button class="btn outline dark-btn">Dark Button</button>'
-  export const Swipe = () => '<button class="btn swipe-btn">Swipe Button</button>'
-  export const Bubble = () => '<button class="btn bubble-btn">Bubble Button</button>'
-  export const Border_01 = () => '<button class="btn border-btn-01"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"><p>Border Button 01</p></rect></svg></button>'
-  export const Border_02 = () => '<button class="btn border-btn-02">Border Button 02</button>'
-  export const Border_03 = () => '<button class="btn border-btn-03">Border Button 03</button>'
-  export const Shadow = () => '<button class="btn shadow-btn">Shadow Button</button>'
-  export const Shining = () => '<button class="btn shining-btn">Shining Button</button>'
-  export const Glow = () => '<button class="btn glow-btn">Glow Button</button>'
-  export const Flip = () => '<button class="btn flip-btn" data-back="Flip Back" data-front="Flip Front"></button>'
-  export const Linebox = () => '<button class="btn linebox-btn">Linebox Button</button>'
-  export const Icon = () => '<button class="btn icon-btn"><span class="circle"><span class="icon arrow"></span></span><span class="btn-text">Icon Button</span></button>'
+  const Template = ({ state, ...args }) => {
+    return createButton({ state, ...args });
+  }
+  
+  export const Default = Template.bind({});
+  Default.args = {
+    state: "default",
+    label: "Default Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+    // onClick() {
+    //   alert('I am  default button');
+    // },
+  };
+  
+  export const Primary = Template.bind({});
+  Primary.args = {
+    state: "primary",
+    label: "Primary Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Success = Template.bind({});
+  Success.args = {
+    state: "success",
+    label: "Success Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Danger = Template.bind({});
+  Danger.args = {
+    state: "danger",
+    label: "Danger Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Warning = Template.bind({});
+  Warning.args = {
+    state: "warning",
+    label: "Warning Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Info = Template.bind({});
+  Info.args = {
+    state: "info",
+    label: "Info Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Light = Template.bind({});
+  Light.args = {
+    state: "light",
+    label: "Light Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Dark = Template.bind({});
+  Dark.args = {
+    state: "dark",
+    label: "Dark Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Link = Template.bind({});
+  Link.args = {
+    state: "link",
+    label: "Link Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Primary = Template.bind({});
+  Outline_Primary.args = {
+    state: "outline primary",
+    label: "Outline Primary Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Success = Template.bind({});
+  Outline_Success.args = {
+    state: "outline success",
+    label: "Outline Success Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Danger = Template.bind({});
+  Outline_Danger.args = {
+    state: "outline danger",
+    label: "Outline Danger Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Warning = Template.bind({});
+  Outline_Warning.args = {
+    state: "outline warning",
+    label: "Outline Warning Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Info = Template.bind({});
+  Outline_Info.args = {
+    state: "outline info",
+    label: "Outline Info Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Light = Template.bind({});
+  Outline_Light.args = {
+    state: "outline light",
+    label: "Outline Light Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Outline_Dark = Template.bind({});
+  Outline_Dark.args = {
+    state: "outline dark",
+    label: "Outline Dark Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Swipe = Template.bind({});
+  Swipe.args = {
+    state: "swipe",
+    label: "Swipe Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Bubble = Template.bind({});
+  Bubble.args = {
+    state: "bubble",
+    label: "Bubble Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Border_01 = Template.bind({});
+  Border_01.args = {
+    state: "border-01",
+    label: "<svg><rect x='0' y='0' fill='none' width='100%' height='100%'><p>Border Button 01</p></rect></svg>",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Border_02 = Template.bind({});
+  Border_02.args = {
+    state: "border-02",
+    label: "Border Button 02",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Border_03 = Template.bind({});
+  Border_03.args = {
+    state: "border-03",
+    label: "Border Button 03",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Shadow = Template.bind({});
+  Shadow.args = {
+    state: "shadow",
+    label: "Shadow Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Shining = Template.bind({});
+  Shining.args = {
+    state: "shining",
+    label: "Shining Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Glow = Template.bind({});
+  Glow.args = {
+    state: "glow",
+    label: "Glow Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Flip = Template.bind({});
+  Flip.args = {
+    state: "flip",
+    label: "",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+    dataFront: "Front",
+    dataBack: "Back",
+  };
+  
+  export const Linebox = Template.bind({});
+  Linebox.args = {
+    state: "linebox",
+    label: "Linebox Button",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };
+  
+  export const Icon = Template.bind({});
+  Icon.args = {
+    state: "icon",
+    label: "<span class='circle'><span class='icon arrow'></span></span><span class='btn-text'>Icon Button</span>",
+    backgroundColor: "",
+    border: "",
+    borderColor: "",
+  };

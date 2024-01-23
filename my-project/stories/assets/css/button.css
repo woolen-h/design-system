@@ -87,12 +87,14 @@ input:-webkit-autofill:active {
 .btn {
   padding: 15px 30px;
   border-radius: 30px;
+  transition: 0.3s;
   border: 1px solid #888;
   color: #888;
-  background: transparent;
-  transition: 0.3s;
 }
-.btn:hover {
+.btn.default-btn {
+  background: transparent;
+}
+.btn.default-btn:hover {
   background-color: #888;
   color: #fff;
 }
@@ -162,6 +164,7 @@ input:-webkit-autofill:active {
 }
 .btn.swipe-btn {
   border-radius: 0;
+  color: #888;
 }
 .btn.swipe-btn:hover {
   background-color: transparent;
@@ -171,6 +174,7 @@ input:-webkit-autofill:active {
 .btn.bubble-btn {
   position: relative;
   overflow: hidden;
+  color: #888;
 }
 .btn.bubble-btn::after {
   content: "";
@@ -188,46 +192,47 @@ input:-webkit-autofill:active {
 }
 .btn.bubble-btn:hover {
   background-color: transparent;
+  color: #fff;
 }
 .btn.bubble-btn:hover::after {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.btn.border-btn-01 {
+.btn.border-01-btn {
   position: relative;
   border: 0;
   color: #888;
 }
-.btn.border-btn-01 svg {
+.btn.border-01-btn svg {
   position: absolute;
   top: -1px;
   left: 0;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
 }
-.btn.border-btn-01 svg rect {
+.btn.border-01-btn svg rect {
   fill: none;
   stroke: #888;
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
 }
-.btn.border-btn-01:hover {
+.btn.border-01-btn:hover {
   background-color: transparent;
 }
-.btn.border-btn-01:hover rect {
+.btn.border-01-btn:hover rect {
   stroke-width: 3;
   stroke-dasharray: 14, 310;
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.btn.border-btn-02 {
+.btn.border-02-btn {
   border: 0;
   padding: 0;
   letter-spacing: 0;
   margin: 0 15px;
 }
-.btn.border-btn-02:after, .btn.border-btn-02:before {
+.btn.border-02-btn:after, .btn.border-02-btn:before {
   content: "";
   backface-visibility: hidden;
   border: 1px solid rgba(136, 136, 136, 0);
@@ -237,30 +242,30 @@ input:-webkit-autofill:active {
   transition: all 0.3s ease-in-out;
   width: 0;
 }
-.btn.border-btn-02:before {
+.btn.border-02-btn:before {
   margin-bottom: 15px;
 }
-.btn.border-btn-02:after {
+.btn.border-02-btn:after {
   margin-top: 15px;
 }
-.btn.border-btn-02:hover {
+.btn.border-02-btn:hover {
   letter-spacing: 5px;
   background-color: transparent;
   color: #888;
 }
-.btn.border-btn-02:hover:after, .btn.border-btn-02:hover:before {
+.btn.border-02-btn:hover:after, .btn.border-02-btn:hover:before {
   backface-visibility: hidden;
   border-color: #888;
   transition: all 0.35s ease-in-out;
   width: 100%;
 }
-.btn.border-btn-03 {
+.btn.border-03-btn {
   border: 0;
   position: relative;
   padding-left: 0;
   padding-right: 0;
 }
-.btn.border-btn-03:after {
+.btn.border-03-btn:after {
   content: "";
   position: absolute;
   display: block;
@@ -273,11 +278,11 @@ input:-webkit-autofill:active {
   transition: all 0.5s ease-in-out;
   margin: 0 auto;
 }
-.btn.border-btn-03:hover {
+.btn.border-03-btn:hover {
   background-color: transparent;
   color: #888;
 }
-.btn.border-btn-03:hover:after {
+.btn.border-03-btn:hover:after {
   width: 100%;
 }
 .btn.shadow-btn {
@@ -480,14 +485,26 @@ input:-webkit-autofill:active {
 .btn.outline.primary-btn {
   color: #168BF2;
 }
+.btn.outline.primary-btn:hover {
+  background-color: #168BF2;
+}
 .btn.outline.success-btn {
   color: #429E46;
+}
+.btn.outline.success-btn:hover {
+  background-color: #429E46;
 }
 .btn.outline.danger-btn {
   color: #F22116;
 }
+.btn.outline.danger-btn:hover {
+  background-color: #F22116;
+}
 .btn.outline.warning-btn {
   color: #F2A007;
+}
+.btn.outline.warning-btn:hover {
+  background-color: #F2A007;
 }
 .btn.outline.info-btn {
   color: #602ADE;
