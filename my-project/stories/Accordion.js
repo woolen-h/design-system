@@ -5,7 +5,7 @@ export const createAccordion = () => {
         const accordionButtons = document.querySelectorAll('.accordion-button');
       
         accordionButtons.forEach(function (button) {
-          button.addEventListener('click', () => {
+          button.addEventListener('click', function() {
             const accordionContent = this.nextElementSibling.querySelector('.accordion-content');
             const accordionItem = this.parentElement;
               const openItem = document.querySelector('.accordion-item.open');
