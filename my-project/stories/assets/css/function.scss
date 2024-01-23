@@ -1,0 +1,13 @@
+@import '_common.scss';
+
+.otp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+        padding: 20px 15px;
+        border: 1px solid $default-color;
+        margin-bottom: 15px;
+    }
+}

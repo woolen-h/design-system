@@ -1,0 +1,64 @@
+@import '_common.scss';
+
+ul {
+    &.link-hover {
+        display: flex;
+        gap: 72px;
+
+        > li a {
+            color: #000;
+            transition: .5s;
+            font-weight: bold;
+        }
+
+        &:hover {
+            > li a {
+                color: $primary-color;
+                
+                &:not(:hover) {
+                    color: #000;
+                    opacity: .3;
+                    filter: blur(1px);
+                }
+            }
+        }
+    }
+}
+
+nav {
+    &.link-cursor {
+        > ul {
+            display: flex;
+            gap: 8rem;
+
+            > li {
+                font-weight: bold;
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+.cursor {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    z-index: -2;
+    transition: all .2s ease;
+    transition-property: transform;
+}
+
+.cursor-grow {
+    transform: scale(2.2);
+    background-color: $primary-color;
+}
+
+.link-hovered {
+    color: #fff;
+}

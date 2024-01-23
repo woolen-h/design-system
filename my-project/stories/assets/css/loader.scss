@@ -1,0 +1,18 @@
+@import '_common.scss';
+
+.loader {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: $primary-color;
+    padding: 2rem;
+    background: linear-gradient(currentColor 0 0) bottom left / 0% 3px no-repeat;
+    animation: load 3s linear infinite;
+}
+
+@keyframes load {
+    100% {
+        background-size: 100% 3px;
+    }
+}
