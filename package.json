@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@kemuridama/storybook-addon-github": "^1.2.0"
+    "@kemuridama/storybook-addon-github": "^1.2.0",
+    "@storybook/storybook-deployer": "^2.8.16"
   }
 }
