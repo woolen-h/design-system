@@ -1,0 +1,1 @@
+const d=()=>'<div class="loader">Loading. . .</div>',s={title:"Components/Loader"},o=d;var r,e,a;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:"BorderLoading",...(a=(e=o.parameters)==null?void 0:e.docs)==null?void 0:a.source}}};const t=["Border_Loading"];export{o as Border_Loading,t as __namedExportsOrder,s as default};
