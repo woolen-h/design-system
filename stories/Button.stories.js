@@ -15,9 +15,6 @@ export default {
     backgroundColor: "",
     border: "",
     borderColor: "",
-    // onClick() {
-    //   alert('I am  default button');
-    // },
   };
   
   export const Primary = Template.bind({});
