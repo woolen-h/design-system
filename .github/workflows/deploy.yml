@@ -45,7 +45,7 @@ jobs:
       - name: Build
         run: |
           npm run build
-          cp ./storyboox-static/index.html ./storyboox-static/404.html
+          cp ./storybook-static/index.html ./storybook-static/404.html
 
       - name: Build storybook
         run: |
