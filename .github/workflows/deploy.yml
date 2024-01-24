@@ -44,7 +44,7 @@ jobs:
 
       - name: Build
         run: |
-          npm run build
+          vite build
           cp ./storybook-static/index.html ./storybook-static/404.html
 
       - name: Deploy to gh-pages branch
