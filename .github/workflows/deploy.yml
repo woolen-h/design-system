@@ -45,11 +45,12 @@ jobs:
       - name: Build
         run: |
           npm run build
-          cp ./storybook-static/index.html ./storybook-static/404.html
+          cp ./build/index.html ./build/404.html
 
       - name: Build storybook
         run: |
           npm run build-storybook
+          mv ./storybook-static ./build/storybook
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
