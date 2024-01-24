@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build": "vite",
+    "build": "webpack",
     "build-storybook": "storybook build",
     "deploy-storybook": "storybook-to-ghpages"
   },
@@ -20,6 +20,8 @@
     "@storybook/html": "^8.0.0-alpha.12",
     "@storybook/html-vite": "^8.0.0-alpha.12",
     "@storybook/test": "^8.0.0-alpha.12",
-    "storybook": "^8.0.0-alpha.12"
+    "storybook": "^8.0.0-alpha.12",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
