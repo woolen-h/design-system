@@ -1,11 +1,11 @@
-import { createButton } from "./Button";
+import * as Button from "./Button";
 import './assets/css/button.css';
 
 export default {
     title: 'Components/Button'
   };
   const Template = ({ state, ...args }) => {
-    return createButton({ state, ...args });
+    return Button.createButton({ state, ...args });
   }
   
   export const Default = Template.bind({});
@@ -279,3 +279,5 @@ export default {
     border: "",
     borderColor: "",
   };
+  
+  export const Switch = Button.switchButton;

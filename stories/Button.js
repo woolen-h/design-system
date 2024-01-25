@@ -22,3 +22,5 @@ export const createButton = ({
 
     return btn;
 };
+
+export const switchButton = () => '<div class="btn switch-btn"><input type="checkbox" class="checkbox" id="checkbox"><label class="switch" for="checkbox"><span class="slider"></span></label></div>';

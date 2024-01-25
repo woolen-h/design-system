@@ -633,4 +633,42 @@ input:-webkit-autofill:active {
 }
 .btn.outline:hover {
   color: #fff;
+}
+.btn.switch-btn {
+  padding: 0;
+  width: 80px;
+  height: 45px;
+  position: relative;
+  border: 0;
+}
+.btn.switch-btn .checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.btn.switch-btn .checkbox:checked + .switch {
+  background-color: #168BF2;
+}
+.btn.switch-btn .checkbox:checked + .switch .slider {
+  left: calc(50% - 2px);
+}
+.btn.switch-btn .switch {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #888;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.btn.switch-btn .switch .slider {
+  position: absolute;
+  inset: 2.5px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
 }/*# sourceMappingURL=button.css.map */
