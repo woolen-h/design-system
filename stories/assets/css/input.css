@@ -79,14 +79,17 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   box-shadow: 0 0 0px 1000px #fff inset;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.text-box {
+  position: relative;
+}
 .text-box > label {
   position: absolute;
-  left: 30px;
+  left: 15px;
   color: #888;
   transform: translateY(15px);
   transition: all 0.2s;

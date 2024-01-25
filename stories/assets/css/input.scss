@@ -1,9 +1,11 @@
 @import '_common.scss';
 
 .text-box {
+    position: relative;
+
     > label {
         position: absolute;
-        left: 30px;
+        left: 15px;
         color: $default-color;
         transform: translateY(15px);
         transition: all .2s;
