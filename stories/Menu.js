@@ -1,6 +1,6 @@
 import './assets/css/menus.css';
 
-export const MenuHover = () => '<ul class="link-hover"><li><a href="">Home</a></li><li><a href="">About</a></li><li><a href="">Work</a></li><li><a href="">Services</a></li><li><a href="">Contact</a></li></ul>';
+export const MenuHover = () => '<section class="menu-hover"><ul class="link-hover"><li><a href="">Home</a></li><li><a href="">About</a></li><li><a href="">Work</a></li><li><a href="">Services</a></li><li><a href="">Contact</a></li></ul></section>';
 
 
 export const MenuCursor = () => {
@@ -31,7 +31,7 @@ export const MenuCursor = () => {
     });
   });
   
-  return '<div class="cursor"></div><nav class="link-cursor"><ul><li>Home</li><li>About</li><li>Services</li><li>Contact</li></ul></nav>'
+  return '<section class="menu-cursor"><div class="cursor"></div><nav class="link-cursor"><ul><li>Home</li><li>About</li><li>Services</li><li>Contact</li></ul></nav></section>'
 };
 
 export const MenuDim = () => {
@@ -43,5 +43,5 @@ export const MenuDim = () => {
       menuContent.classList.toggle("open");
     });
   });
-  return '<section></section><div class="menu"><nav><a href="" class="link" style="animation-delay: 0.2s;">Home</a><a href="" class="link" style="animation-delay: 0.3s;">Recipes</a><a href="" class="link" style="animation-delay: 0.4s;">Favorites</a><a href="" class="link" style="animation-delay: 0.5s;">About Us</a><a href="#" class="link" style="animation-delay: 0.6s;">Contact</a></nav></div><button class="menu-btn"></button><div class="backdrop"></div>'
+  return '<section class="menu-dim"><div class="menu"><nav><a href="" class="link" style="animation-delay: 0.2s;">Home</a><a href="" class="link" style="animation-delay: 0.3s;">Recipes</a><a href="" class="link" style="animation-delay: 0.4s;">Favorites</a><a href="" class="link" style="animation-delay: 0.5s;">About Us</a><a href="#" class="link" style="animation-delay: 0.6s;">Contact</a></nav></div><button class="menu-btn"></button><div class="backdrop"></div></section>'
 };
