@@ -1,5 +1,5 @@
 import * as Menu from "./Menu";
-import './assets/css/menu.css';
+import './assets/css/menus.css';
 
 export default {
     title: 'Components/Menu'

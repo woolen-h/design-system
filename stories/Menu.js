@@ -1,4 +1,4 @@
-import './assets/css/menu.css';
+import './assets/css/menus.css';
 
 export const MenuHover = () => '<ul class="link-hover"><li><a href="">Home</a></li><li><a href="">About</a></li><li><a href="">Work</a></li><li><a href="">Services</a></li><li><a href="">Contact</a></li></ul>';
 
