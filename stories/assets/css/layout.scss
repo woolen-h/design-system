@@ -1,25 +1,320 @@
 @import '_common.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css');
 
 .img-gallery {
-    width: 80%;
-    margin: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, 1fr);
-    // grid-template-rows: minmax(300px, 1fr);
-    gap: 30px;
-  }
-  
-  .img-gallery > img {
+  width: 80%;
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
+  // grid-template-rows: minmax(300px, 1fr);
+  gap: 30px;
+
+  > img {
     display: block;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
     transition: 0.6s ease;
+
+    &:hover {
+      scale: 0.85;
+      box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+    }
+  }
+}
+
+section.gsap-menu {
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+  }
+  .landing {
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: #d7d7d7;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+  .landing p,
+  .section p {
+    font-size: 18px;
+    color: #949494;
+  }
+  .section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      color: black;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    color: white;
+
+    .nav-logo {
+      font-size: 22px;
+    }
+  }
+  .nav-items {
+    display: flex;
+    gap: 40px;
+
+    &:hover {
+      color: #949494;
+    }
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191b1d;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    scale: 0;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #1c1d20;
+    color: white;
+    padding: 20vh 11vw 8vh 11vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    transform: translateX(100%);
+    z-index: 2;
+
+    .menu-header {
+      font-size: 12px;
+      color: #7f7f81;
+      padding: 16px 0;
+      border-bottom: 1px solid #7f7f81;
+      margin-bottom: 56px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      
+      .menu-item {
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
+    &.active + .menu-btn {
+      background-color: #455ce9;
+    }
+  }
+}
+
+section.side-bar {
+  width: 100%;
+  height: 100vh;
+  background-color: $default-color;
+
+  > nav {
+    position: fixed;
+    width: 5rem;
+    height: calc(100vh - 0.75rem);
+    background-color: #ffffff;
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: width 500ms ease;
   }
   
-  .img-gallery img:hover {
-    scale: 0.85;
-    box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+  .sidebar-header,
+  .sidebar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
+  
+  .sidebar-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0;
+
+    i {
+      font-size: 2.5rem;
+    }
+
+    > img {
+      width: 3.25rem;
+      height: 3.25rem;
+      background-color: #f4f4f6;
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
+  }
+  
+  &.active {
+    nav {
+      width: 15rem;
+    }
+    .hidden {
+      display: inline;
+    }
+    .sidebar-links,
+    .sidebar-header,
+    .user-profile {
+      justify-content: start;
+      align-items: stretch;
+    }
+    .toggle-btn {
+      transform: rotate(180deg);
+    }
+    .logo-wrapper {
+      padding-left: 5px;
+    }
+  }
+  
+  .sidebar-links {
+    flex-direction: column;
+    margin-bottom: auto;
+    gap: 0.6rem;
+    padding-top: 1.5rem;
+  }
+  nav > .sidebar-links {
+    border-top: 1px solid rgb(211, 211, 211);
+  }
+  
+  .link {
+    display: flex;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .link:hover,
+  .link.active:hover {
+    background-color: #e4e4e8;
+  }
+  .link.active {
+    background-color: #f4f4f6;
+  }
+  
+  .link > img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .sidebar-bottom .sidebar-links {
+    padding-bottom: 1.5rem;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease;
+
+    i {
+      position: relative;
+      top: 2px;
+      left: 1px;
+    }
+  }
+  
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(211, 211, 211);
+  }
+  
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+  }
+  .user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .user-avatar:hover {
+    scale: 1.1;
+  }
+  
+  .user-details {
+    align-self: center;
+    overflow: hidden;
+  }
+  .user-details .username {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .user-details .user-email {
+    font-size: 0.8rem;
+  }
+}
