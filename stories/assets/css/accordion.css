@@ -87,8 +87,6 @@ input:-webkit-autofill:active {
 /* .sbdocs 클래스는 스토리북의 문서화 패널을 나타냅니다. */
 .accordion {
   width: 100%;
-  height: 100vh;
-  padding: 1rem;
 }
 .accordion .accordion-item {
   background-color: #eeeeee;

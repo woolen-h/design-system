@@ -2,7 +2,8 @@ import * as Menu from "./Menu";
 import './assets/css/menus.css';
 
 export default {
-    title: 'Components/Menu'
+    title: 'Components/Menu',
+    tags: ['autodocs']
   };
 
   export const Menu_Hover = Menu.MenuHover;

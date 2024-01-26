@@ -2,7 +2,8 @@ import * as Layout from "./Layout";
 import './assets/css/layout.css';
 
 export default {
-    title: 'Components/Layout'
+    title: 'Components/Layout',
+    tags: ['autodocs']
   };
 
   export const Image_Gallery = Layout.imageGallery;

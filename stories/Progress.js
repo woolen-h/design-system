@@ -48,5 +48,17 @@ export const StepProgressBar = () => {
         }
     });
 
-    return '<div class="container"><div class="progress-container"><div class="progress-bar" id="bar"></div><div class="progress-step active" id="step">1</div><div class="progress-step" id="step">2</div><div class="progress-step" id="step">3</div><div class="progress-step" id="step">4</div></div><button type="button" class="btn" id="prev" disabled>Prev</button><button type="button" class="btn" id="next">Next</button></div>'
+    return (
+        '<div class="container">' +
+            '<div class="progress-container">' +
+                '<div class="progress-bar" id="bar"></div>' +
+                '<div class="progress-step active">1</div>' +
+                '<div class="progress-step">2</div>' +
+                '<div class="progress-step">3</div>' +
+                '<div class="progress-step">4</div>' +
+            '</div>' +
+            '<button type="button" class="btn" id="prev" disabled>Prev</button>' +
+            '<button type="button" class="btn" id="next">Next</button>' +
+        '</div>'
+    );
 };

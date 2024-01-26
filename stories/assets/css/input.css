@@ -85,23 +85,20 @@ input:-webkit-autofill:active {
 }
 
 /* .sbdocs 클래스는 스토리북의 문서화 패널을 나타냅니다. */
-.text-box {
+.text-field-animate {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.text-box > label {
+.text-field-animate > label {
   position: absolute;
-  top: 50%;
-  left: 44%;
-  transform: translate(-50%, -50%);
+  top: 15px;
+  left: 15px;
   color: #888;
+  background-color: #fff;
+  padding-left: 7px;
+  padding-right: 5px;
   transition: all 0.2s;
 }
-.text-box > input {
+.text-field-animate > input {
   all: unset;
   width: 230px;
   height: 38px;
@@ -110,14 +107,11 @@ input:-webkit-autofill:active {
   color: #888;
   border: 1px solid #888;
 }
-.text-box > input:focus, .text-box > input:valid {
+.text-field-animate > input:focus, .text-field-animate > input:valid {
   border-color: #168BF2;
   color: #168BF2;
 }
-.text-box > input:focus ~ label, .text-box > input:valid ~ label {
-  top: 46%;
-  background-color: #fff;
-  padding-left: 7px;
-  padding-right: 5px;
+.text-field-animate > input:focus ~ label, .text-field-animate > input:valid ~ label {
+  top: -7px;
   color: #168BF2;
 }/*# sourceMappingURL=input.css.map */

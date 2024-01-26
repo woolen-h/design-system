@@ -2,7 +2,8 @@ import * as Alert from "./Alert";
 import './assets/css/alert.css';
 
 export default {
-    title: 'Components/Alert/Solid Alert'
+    title: 'Components/Alert/Solid Alert',
+    tags: ['autodocs']
   };
   const Template = ({ state, ...args }) => {
     return Alert.DefaultAlert({ state, ...args });
