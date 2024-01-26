@@ -128,37 +128,82 @@ input:-webkit-autofill:active {
   border-color: #222;
   color: #fff;
 }
-.alert.alert-icon-line {
+.alert.alert-line {
   border-radius: 0;
   border-left: 5px solid #888;
   background-color: #d5d5d5;
 }
-.alert.alert-icon-line.primary {
+.alert.alert-line.primary {
   border-color: #168BF2;
   background-color: #a7d3fa;
 }
-.alert.alert-icon-line.success {
+.alert.alert-line.success {
   border-color: #429E46;
   background-color: #a1d8a4;
 }
-.alert.alert-icon-line.danger {
+.alert.alert-line.danger {
   border-color: #F22116;
   background-color: #faaba7;
 }
-.alert.alert-icon-line.warning {
+.alert.alert-line.warning {
   border-color: #F2A007;
   background-color: #fcd896;
 }
-.alert.alert-icon-line.info {
+.alert.alert-line.info {
   border-color: #602ADE;
   background-color: #c3aef3;
 }
-.alert.alert-icon-line.dark {
+.alert.alert-line.dark {
   border-color: #222;
   background-color: #6f6f6f;
   color: #fff;
 }
-.alert.alert-icon-line.light {
+.alert.alert-line.light {
+  border-color: #a0a0b3;
+  background-color: #f5f5f7;
+}
+.alert.alert-icon {
+  background-color: #d5d5d5;
+  line-height: 1.5em;
+}
+.alert.alert-icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #888;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-image: url("https://drive.google.com/uc?id=16tB66_mXXkAycM2XD9D9mVgQ5ynjZddA");
+  background-size: contain;
+}
+.alert.alert-icon.primary {
+  border-color: #168BF2;
+  background-color: #a7d3fa;
+}
+.alert.alert-icon.success {
+  border-color: #429E46;
+  background-color: #a1d8a4;
+}
+.alert.alert-icon.danger {
+  border-color: #F22116;
+  background-color: #faaba7;
+}
+.alert.alert-icon.warning {
+  border-color: #F2A007;
+  background-color: #fcd896;
+}
+.alert.alert-icon.info {
+  border-color: #602ADE;
+  background-color: #c3aef3;
+}
+.alert.alert-icon.dark {
+  border-color: #222;
+  background-color: #6f6f6f;
+  color: #fff;
+}
+.alert.alert-icon.light {
   border-color: #a0a0b3;
   background-color: #f5f5f7;
 }/*# sourceMappingURL=alert.css.map */
