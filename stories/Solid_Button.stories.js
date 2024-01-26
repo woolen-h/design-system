@@ -2,7 +2,7 @@ import * as Button from "./Button";
 import './assets/css/button.css';
 
 export default {
-    title: 'Button/Solid Button'
+    title: 'Components/Button/Solid Button'
   };
   const Template = ({ state, ...args }) => {
     return Button.createButton({ state, ...args });

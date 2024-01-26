@@ -2,7 +2,7 @@ import * as Alert from "./Alert";
 import './assets/css/alert.css';
 
 export default {
-    title: 'Alert/Line Alert'
+    title: 'Components/Alert/Line Alert'
   };
   const Template = ({ state, ...args }) => {
     return Alert.DefaultAlert({ state, ...args });

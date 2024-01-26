@@ -2,7 +2,7 @@ import * as Alert from "./Alert";
 import './assets/css/alert.css';
 
 export default {
-    title: 'Alert/Icon Alert'
+    title: 'Components/Alert/Icon Alert'
   };
   const Template = ({ state, ...args }) => {
     return Alert.IconAlert({ state, ...args });
