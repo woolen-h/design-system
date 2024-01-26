@@ -2,48 +2,48 @@ import * as Alert from "./Alert";
 import './assets/css/alert.css';
 
 export default {
-    title: 'Alert/Line_Alert'
+    title: 'Alert/Line Alert'
   };
   const Template = ({ state, ...args }) => {
     return Alert.DefaultAlert({ state, ...args });
   }
 
-  export const Line_Default = Template.bind({});
-  Line_Default.args = {
+  export const Default = Template.bind({});
+  Default.args = {
     state: "line",
   };
 
-  export const Line_Primary = Template.bind({});
-  Line_Primary.args = {
+  export const Primary = Template.bind({});
+  Primary.args = {
     state: "line primary",
   };
 
-  export const Line_Success = Template.bind({});
-  Line_Success.args = {
+  export const Success = Template.bind({});
+  Success.args = {
     state: "line success",
   };
 
-  export const Line_Danger = Template.bind({});
-  Line_Danger.args = {
+  export const Danger = Template.bind({});
+  Danger.args = {
     state: "line danger",
   };
 
-  export const Line_Warning = Template.bind({});
-  Line_Warning.args = {
+  export const Warning = Template.bind({});
+  Warning.args = {
     state: "line warning",
   };
 
-  export const Line_Info = Template.bind({});
-  Line_Info.args = {
+  export const Info = Template.bind({});
+  Info.args = {
     state: "line info",
   };
 
-  export const Line_Dark = Template.bind({});
-  Line_Dark.args = {
-    state: "line dark",
+  export const Light = Template.bind({});
+  Light.args = {
+    state: "line light",
   };
 
-  export const Line_Light = Template.bind({});
-  Line_Light.args = {
-    state: "line light",
+  export const Dark = Template.bind({});
+  Dark.args = {
+    state: "line dark",
   };

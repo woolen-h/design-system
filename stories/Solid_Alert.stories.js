@@ -47,8 +47,3 @@ export default {
   Dark.args = {
     state: "dark",
   };
-
-  export const Icon_Line_Default = Template.bind({});
-  Icon_Line_Default.args = {
-    state: "icon-line",
-  };
