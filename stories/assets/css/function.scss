@@ -1,9 +1,12 @@
 @import '_common.scss';
 
 .otp {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
 
     input {
         padding: 20px 15px;

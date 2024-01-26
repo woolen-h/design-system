@@ -84,14 +84,21 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+/* .sbdocs 클래스는 스토리북의 문서화 패널을 나타냅니다. */
 .text-box {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text-box > label {
   position: absolute;
-  left: 15px;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
   color: #888;
-  transform: translateY(15px);
   transition: all 0.2s;
 }
 .text-box > input {
@@ -108,7 +115,7 @@ input:-webkit-autofill:active {
   color: #168BF2;
 }
 .text-box > input:focus ~ label, .text-box > input:valid ~ label {
-  transform: translateY(-9px);
+  top: 46%;
   background-color: #fff;
   padding-left: 7px;
   padding-right: 5px;

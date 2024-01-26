@@ -1,12 +1,6 @@
 @import '_common.scss';
 @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
-body.sb-show-main {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
   .btn {
       padding: 15px 30px;
       border-radius: 30px;
@@ -688,4 +682,3 @@ body.sb-show-main {
         }
       }
   }
-}

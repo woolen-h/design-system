@@ -85,100 +85,95 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-body.sb-show-main {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-body.sb-show-main .btn {
+/* .sbdocs 클래스는 스토리북의 문서화 패널을 나타냅니다. */
+.btn {
   padding: 15px 30px;
   border-radius: 30px;
   transition: 0.3s;
   border: 1px solid #888;
   color: #888;
 }
-body.sb-show-main .btn.default-btn {
+.btn.default-btn {
   background: transparent;
 }
-body.sb-show-main .btn.default-btn:hover {
+.btn.default-btn:hover {
   background-color: #888;
   color: #fff;
 }
-body.sb-show-main .btn.primary-btn {
+.btn.primary-btn {
   border-color: #168BF2;
   background-color: #168BF2;
   color: #fff;
 }
-body.sb-show-main .btn.primary-btn:hover {
+.btn.primary-btn:hover {
   background-color: #0b71ca;
 }
-body.sb-show-main .btn.success-btn {
+.btn.success-btn {
   border-color: #429E46;
   background-color: #429E46;
   color: #fff;
 }
-body.sb-show-main .btn.success-btn:hover {
+.btn.success-btn:hover {
   background-color: #337a36;
 }
-body.sb-show-main .btn.danger-btn {
+.btn.danger-btn {
   border-color: #F22116;
   background-color: #F22116;
   color: #fff;
 }
-body.sb-show-main .btn.danger-btn:hover {
+.btn.danger-btn:hover {
   background-color: #ca150b;
 }
-body.sb-show-main .btn.warning-btn {
+.btn.warning-btn {
   border-color: #F2A007;
   background-color: #F2A007;
   color: #fff;
 }
-body.sb-show-main .btn.warning-btn:hover {
+.btn.warning-btn:hover {
   background-color: #c07f06;
 }
-body.sb-show-main .btn.info-btn {
+.btn.info-btn {
   border-color: #602ADE;
   background-color: #602ADE;
   color: #fff;
 }
-body.sb-show-main .btn.info-btn:hover {
+.btn.info-btn:hover {
   background-color: #8156e5;
 }
-body.sb-show-main .btn.light-btn {
+.btn.light-btn {
   border-color: #d9d9e0;
   background-color: #f5f5f7;
   color: #000;
 }
-body.sb-show-main .btn.light-btn:hover {
+.btn.light-btn:hover {
   background-color: #d9d9e0;
 }
-body.sb-show-main .btn.dark-btn {
+.btn.dark-btn {
   border-color: #3c3c3c;
   background-color: #222;
   color: #fff;
 }
-body.sb-show-main .btn.dark-btn:hover {
+.btn.dark-btn:hover {
   background-color: #3c3c3c;
 }
-body.sb-show-main .btn.link-btn {
+.btn.link-btn {
   border: 0;
   background-color: transparent;
   color: #168BF2;
 }
-body.sb-show-main .btn.link-btn:hover {
+.btn.link-btn:hover {
   color: #095699;
 }
-body.sb-show-main .btn.swipe-btn {
+.btn.swipe-btn {
   border-radius: 0;
   color: #888;
 }
-body.sb-show-main .btn.swipe-btn:hover {
+.btn.swipe-btn:hover {
   background-color: transparent;
   box-shadow: inset 175px 0 0 0 #888;
   color: #fff;
 }
-body.sb-show-main .btn.diagonal-swipe-btn {
+.btn.diagonal-swipe-btn {
   border: 0;
   border-radius: 0;
   outline: 0;
@@ -189,11 +184,11 @@ body.sb-show-main .btn.diagonal-swipe-btn {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
-body.sb-show-main .btn.diagonal-swipe-btn span {
+.btn.diagonal-swipe-btn span {
   position: relative;
   z-index: 2;
 }
-body.sb-show-main .btn.diagonal-swipe-btn::after {
+.btn.diagonal-swipe-btn::after {
   content: "";
   position: absolute;
   left: 0;
@@ -206,15 +201,15 @@ body.sb-show-main .btn.diagonal-swipe-btn::after {
   transform: skew(40deg) translateX(-92%) translateY(40%);
   transition: all 0.5s ease-in-out;
 }
-body.sb-show-main .btn.diagonal-swipe-btn:hover::after {
+.btn.diagonal-swipe-btn:hover::after {
   transform: skew(40deg) translateX(0) translateY(10%);
 }
-body.sb-show-main .btn.bubble-btn {
+.btn.bubble-btn {
   position: relative;
   overflow: hidden;
   color: #888;
 }
-body.sb-show-main .btn.bubble-btn::after {
+.btn.bubble-btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -228,49 +223,49 @@ body.sb-show-main .btn.bubble-btn::after {
   opacity: 0;
   transition: 0.3s;
 }
-body.sb-show-main .btn.bubble-btn:hover {
+.btn.bubble-btn:hover {
   background-color: transparent;
   color: #fff;
 }
-body.sb-show-main .btn.bubble-btn:hover::after {
+.btn.bubble-btn:hover::after {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-body.sb-show-main .btn.border-01-btn {
+.btn.border-01-btn {
   position: relative;
   border: 0;
   color: #888;
 }
-body.sb-show-main .btn.border-01-btn svg {
+.btn.border-01-btn svg {
   position: absolute;
   top: -1px;
   left: 0;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
 }
-body.sb-show-main .btn.border-01-btn svg rect {
+.btn.border-01-btn svg rect {
   fill: none;
   stroke: #888;
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
 }
-body.sb-show-main .btn.border-01-btn:hover {
+.btn.border-01-btn:hover {
   background-color: transparent;
 }
-body.sb-show-main .btn.border-01-btn:hover rect {
+.btn.border-01-btn:hover rect {
   stroke-width: 3;
   stroke-dasharray: 14, 310;
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-body.sb-show-main .btn.border-02-btn {
+.btn.border-02-btn {
   border: 0;
   padding: 0;
   letter-spacing: 0;
   margin: 0 15px;
 }
-body.sb-show-main .btn.border-02-btn:after, body.sb-show-main .btn.border-02-btn:before {
+.btn.border-02-btn:after, .btn.border-02-btn:before {
   content: "";
   backface-visibility: hidden;
   border: 1px solid rgba(136, 136, 136, 0);
@@ -280,30 +275,30 @@ body.sb-show-main .btn.border-02-btn:after, body.sb-show-main .btn.border-02-btn
   transition: all 0.3s ease-in-out;
   width: 0;
 }
-body.sb-show-main .btn.border-02-btn:before {
+.btn.border-02-btn:before {
   margin-bottom: 15px;
 }
-body.sb-show-main .btn.border-02-btn:after {
+.btn.border-02-btn:after {
   margin-top: 15px;
 }
-body.sb-show-main .btn.border-02-btn:hover {
+.btn.border-02-btn:hover {
   letter-spacing: 5px;
   background-color: transparent;
   color: #888;
 }
-body.sb-show-main .btn.border-02-btn:hover:after, body.sb-show-main .btn.border-02-btn:hover:before {
+.btn.border-02-btn:hover:after, .btn.border-02-btn:hover:before {
   backface-visibility: hidden;
   border-color: #888;
   transition: all 0.35s ease-in-out;
   width: 100%;
 }
-body.sb-show-main .btn.border-03-btn {
+.btn.border-03-btn {
   border: 0;
   position: relative;
   padding-left: 0;
   padding-right: 0;
 }
-body.sb-show-main .btn.border-03-btn:after {
+.btn.border-03-btn:after {
   content: "";
   position: absolute;
   display: block;
@@ -316,21 +311,21 @@ body.sb-show-main .btn.border-03-btn:after {
   transition: all 0.5s ease-in-out;
   margin: 0 auto;
 }
-body.sb-show-main .btn.border-03-btn:hover {
+.btn.border-03-btn:hover {
   background-color: transparent;
   color: #888;
 }
-body.sb-show-main .btn.border-03-btn:hover:after {
+.btn.border-03-btn:hover:after {
   width: 100%;
 }
-body.sb-show-main .btn.border-04-btn {
+.btn.border-04-btn {
   border: 0;
   border-radius: 0;
   color: #fff;
   background-color: #888;
   position: relative;
 }
-body.sb-show-main .btn.border-04-btn::before {
+.btn.border-04-btn::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -343,7 +338,7 @@ body.sb-show-main .btn.border-04-btn::before {
   overflow: hidden;
   transition: 0.3s ease;
 }
-body.sb-show-main .btn.border-04-btn::after {
+.btn.border-04-btn::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -355,30 +350,30 @@ body.sb-show-main .btn.border-04-btn::after {
   border-right: 1px solid #888;
   transition: 0.3s ease;
 }
-body.sb-show-main .btn.border-04-btn:hover::before, body.sb-show-main .btn.border-04-btn:hover::after {
+.btn.border-04-btn:hover::before, .btn.border-04-btn:hover::after {
   width: calc(100% + 9px);
   height: calc(100% + 9px);
 }
-body.sb-show-main .btn.shadow-btn {
+.btn.shadow-btn {
   background: #fff;
   box-shadow: 0 2px 0 rgba(136, 136, 136, 0.6), 0 2px 4px rgba(136, 136, 136, 0.5);
 }
-body.sb-show-main .btn.shadow-btn:hover {
+.btn.shadow-btn:hover {
   background: #ddd;
   border: 1px solid rgba(136, 136, 136, 0.6);
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), inset 1px 1px 2px rgba(136, 136, 136, 0.3);
 }
-body.sb-show-main .btn.shining-btn {
+.btn.shining-btn {
   position: relative;
   overflow: hidden;
   z-index: 0;
   background: #888;
   color: #fff;
 }
-body.sb-show-main .btn.shining-btn span {
+.btn.shining-btn span {
   z-index: 20;
 }
-body.sb-show-main .btn.shining-btn:after {
+.btn.shining-btn:after {
   content: "";
   position: absolute;
   top: -55%;
@@ -389,14 +384,14 @@ body.sb-show-main .btn.shining-btn:after {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent);
   transform: rotate(35deg);
 }
-body.sb-show-main .btn.shining-btn:hover {
+.btn.shining-btn:hover {
   background: #a2a2a2;
 }
-body.sb-show-main .btn.shining-btn:hover:after {
+.btn.shining-btn:hover:after {
   left: 120%;
   transition: all 0.65s cubic-bezier(0.19, 1, 0.22, 1);
 }
-body.sb-show-main .btn.glow-btn {
+.btn.glow-btn {
   background: #888;
   color: #fff;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
@@ -406,19 +401,19 @@ body.sb-show-main .btn.glow-btn {
   outline-offset: 0;
   transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
-body.sb-show-main .btn.glow-btn:hover {
+.btn.glow-btn:hover {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.25);
   text-shadow: 1px 1px 2px #fff;
   outline-color: rgba(0, 0, 0, 0);
   outline-offset: 15px;
 }
-body.sb-show-main .btn.flip-btn {
+.btn.flip-btn {
   position: relative;
   opacity: 1;
   padding: 0;
   border: 0;
 }
-body.sb-show-main .btn.flip-btn:before {
+.btn.flip-btn:before {
   content: attr(data-front);
   display: block;
   position: relative;
@@ -430,7 +425,7 @@ body.sb-show-main .btn.flip-btn:before {
   transition: 0.5s;
   border: 2px solid #000;
 }
-body.sb-show-main .btn.flip-btn:after {
+.btn.flip-btn:after {
   content: attr(data-back);
   display: block;
   position: absolute;
@@ -444,22 +439,22 @@ body.sb-show-main .btn.flip-btn:after {
   transition: 0.5s;
   border: 2px solid #000;
 }
-body.sb-show-main .btn.flip-btn:hover {
+.btn.flip-btn:hover {
   background-color: transparent;
 }
-body.sb-show-main .btn.flip-btn:hover:before {
+.btn.flip-btn:hover:before {
   opacity: 0;
   transform: translateY(50%) rotateX(90deg);
 }
-body.sb-show-main .btn.flip-btn:hover:after {
+.btn.flip-btn:hover:after {
   opacity: 1;
   transform: translateY(0) rotateX(0);
 }
-body.sb-show-main .btn.linebox-btn {
+.btn.linebox-btn {
   position: relative;
   border: 0;
 }
-body.sb-show-main .btn.linebox-btn:after {
+.btn.linebox-btn:after {
   content: "";
   display: block;
   position: absolute;
@@ -476,22 +471,22 @@ body.sb-show-main .btn.linebox-btn:after {
   z-index: -1;
   transition: 0.5s;
 }
-body.sb-show-main .btn.linebox-btn:hover {
+.btn.linebox-btn:hover {
   background-color: transparent;
   color: #fff;
 }
-body.sb-show-main .btn.linebox-btn:hover:after {
+.btn.linebox-btn:hover:after {
   opacity: 1;
   height: 100%;
   border: 2px solid #888;
 }
-body.sb-show-main .btn.icon-animate-btn {
+.btn.icon-animate-btn {
   position: relative;
   border: 0;
   width: 150px;
   padding: 0;
 }
-body.sb-show-main .btn.icon-animate-btn .circle {
+.btn.icon-animate-btn .circle {
   display: block;
   position: relative;
   width: 40px;
@@ -500,7 +495,7 @@ body.sb-show-main .btn.icon-animate-btn .circle {
   background: #888;
   transition: 0.5s;
 }
-body.sb-show-main .btn.icon-animate-btn .circle .icon {
+.btn.icon-animate-btn .circle .icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -508,7 +503,7 @@ body.sb-show-main .btn.icon-animate-btn .circle .icon {
   margin: auto;
   background: #fff;
 }
-body.sb-show-main .btn.icon-animate-btn .circle .icon.arrow {
+.btn.icon-animate-btn .circle .icon.arrow {
   top: 20px;
   left: 18px;
   width: 20px;
@@ -516,7 +511,7 @@ body.sb-show-main .btn.icon-animate-btn .circle .icon.arrow {
   background: none;
   transition: 0.5s;
 }
-body.sb-show-main .btn.icon-animate-btn .circle .icon.arrow:before {
+.btn.icon-animate-btn .circle .icon.arrow:before {
   position: absolute;
   top: -30%;
   left: -30%;
@@ -527,7 +522,7 @@ body.sb-show-main .btn.icon-animate-btn .circle .icon.arrow:before {
   border-right: 3px solid #fff;
   transform: rotate(45deg);
 }
-body.sb-show-main .btn.icon-animate-btn .btn-text {
+.btn.icon-animate-btn .btn-text {
   position: absolute;
   width: 100%;
   top: -2px;
@@ -538,22 +533,22 @@ body.sb-show-main .btn.icon-animate-btn .btn-text {
   padding: 13px 0;
   transition: 0.5s;
 }
-body.sb-show-main .btn.icon-animate-btn .btn-text:hover {
+.btn.icon-animate-btn .btn-text:hover {
   margin-left: 18px;
 }
-body.sb-show-main .btn.icon-animate-btn:hover {
+.btn.icon-animate-btn:hover {
   background-color: transparent;
 }
-body.sb-show-main .btn.icon-animate-btn:hover .circle {
+.btn.icon-animate-btn:hover .circle {
   width: 100%;
 }
-body.sb-show-main .btn.icon-animate-btn:hover .circle .icon.arrow {
+.btn.icon-animate-btn:hover .circle .icon.arrow {
   transform: translate(10px, 0);
 }
-body.sb-show-main .btn.icon-animate-btn:hover .btn-text {
+.btn.icon-animate-btn:hover .btn-text {
   color: #fff;
 }
-body.sb-show-main .btn.icon-only-btn {
+.btn.icon-only-btn {
   width: 100px;
   height: 100px;
   background-color: #fff;
@@ -566,14 +561,14 @@ body.sb-show-main .btn.icon-only-btn {
   overflow: hidden;
   position: relative;
 }
-body.sb-show-main .btn.icon-only-btn i {
+.btn.icon-only-btn i {
   position: relative;
   top: 5%;
   color: #168BF2;
   font-size: 2rem;
   transition: all 0.2s;
 }
-body.sb-show-main .btn.icon-only-btn::before {
+.btn.icon-only-btn::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -584,82 +579,82 @@ body.sb-show-main .btn.icon-only-btn::before {
   rotate: 45deg;
   transition: 0.5s ease;
 }
-body.sb-show-main .btn.icon-only-btn:hover i {
+.btn.icon-only-btn:hover i {
   color: #fff;
 }
-body.sb-show-main .btn.icon-only-btn:hover::before {
+.btn.icon-only-btn:hover::before {
   top: -10%;
   left: 0;
 }
-body.sb-show-main .btn.outline {
+.btn.outline {
   background-color: transparent;
 }
-body.sb-show-main .btn.outline.primary-btn {
+.btn.outline.primary-btn {
   color: #168BF2;
 }
-body.sb-show-main .btn.outline.primary-btn:hover {
+.btn.outline.primary-btn:hover {
   background-color: #168BF2;
 }
-body.sb-show-main .btn.outline.success-btn {
+.btn.outline.success-btn {
   color: #429E46;
 }
-body.sb-show-main .btn.outline.success-btn:hover {
+.btn.outline.success-btn:hover {
   background-color: #429E46;
 }
-body.sb-show-main .btn.outline.danger-btn {
+.btn.outline.danger-btn {
   color: #F22116;
 }
-body.sb-show-main .btn.outline.danger-btn:hover {
+.btn.outline.danger-btn:hover {
   background-color: #F22116;
 }
-body.sb-show-main .btn.outline.warning-btn {
+.btn.outline.warning-btn {
   color: #F2A007;
 }
-body.sb-show-main .btn.outline.warning-btn:hover {
+.btn.outline.warning-btn:hover {
   background-color: #F2A007;
 }
-body.sb-show-main .btn.outline.info-btn {
+.btn.outline.info-btn {
   color: #602ADE;
 }
-body.sb-show-main .btn.outline.info-btn:hover {
+.btn.outline.info-btn:hover {
   background-color: #602ADE;
 }
-body.sb-show-main .btn.outline.light-btn {
+.btn.outline.light-btn {
   color: #f5f5f7;
 }
-body.sb-show-main .btn.outline.light-btn:hover {
+.btn.outline.light-btn:hover {
   color: #000;
 }
-body.sb-show-main .btn.outline.dark-btn {
+.btn.outline.dark-btn {
   color: #222;
   border-color: #222;
 }
-body.sb-show-main .btn.outline.dark-btn:hover {
+.btn.outline.dark-btn:hover {
   background-color: #222;
 }
-body.sb-show-main .btn.outline:hover {
+.btn.outline:hover {
   color: #fff;
 }
-body.sb-show-main .btn.switch-btn {
+.btn.switch-btn {
   padding: 0;
   width: 80px;
   height: 45px;
   position: relative;
   border: 0;
 }
-body.sb-show-main .btn.switch-btn .checkbox {
+.btn.switch-btn .checkbox {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
-body.sb-show-main .btn.switch-btn .checkbox:checked + .switch {
+.btn.switch-btn .checkbox:checked + .switch {
   background-color: #168BF2;
 }
-body.sb-show-main .btn.switch-btn .checkbox:checked + .switch .slider {
+.btn.switch-btn .checkbox:checked + .switch .slider {
   left: calc(50% - 2px);
 }
-body.sb-show-main .btn.switch-btn .switch {
+.btn.switch-btn .switch {
   display: block;
   width: 100%;
   height: 100%;
@@ -668,7 +663,7 @@ body.sb-show-main .btn.switch-btn .switch {
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
-body.sb-show-main .btn.switch-btn .switch .slider {
+.btn.switch-btn .switch .slider {
   position: absolute;
   inset: 2.5px;
   width: 40px;

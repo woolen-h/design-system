@@ -2,6 +2,8 @@
 
 .accordion {
     width: 100%;
+    height: 100vh;
+    padding: 1rem;
     
     .accordion-item {
         background-color: lighten($default-color, 40%);
