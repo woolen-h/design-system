@@ -1,6 +1,6 @@
 import './assets/css/alert.css';
 
-export const createAlert = ({
+export const DefaultAlert = ({
     state = "",
     label = "This is Alert!",
 }) => {

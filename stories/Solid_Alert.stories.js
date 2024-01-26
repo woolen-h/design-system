@@ -1,11 +1,11 @@
-import { createAlert } from "./Alert";
+import * as Alert from "./Alert";
 import './assets/css/alert.css';
 
 export default {
-    title: 'Components/Alert'
+    title: 'Alert/Solid Alert'
   };
   const Template = ({ state, ...args }) => {
-    return createAlert({ state, ...args });
+    return Alert.DefaultAlert({ state, ...args });
   }
 
   export const Default = Template.bind({});
@@ -46,4 +46,9 @@ export default {
   export const Dark = Template.bind({});
   Dark.args = {
     state: "dark",
+  };
+
+  export const Icon_Line_Default = Template.bind({});
+  Icon_Line_Default.args = {
+    state: "icon-line",
   };
