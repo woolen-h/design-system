@@ -1,4 +1,4 @@
-import{D as q}from"./Alert--9bSLbzN.js";const z={title:"Components/Alert/Line Alert"},r=({state:T,...j})=>q({state:T,...j}),e=r.bind({});e.args={state:"line"};const a=r.bind({});a.args={state:"line primary"};const s=r.bind({});s.args={state:"line success"};const t=r.bind({});t.args={state:"line danger"};const n=r.bind({});n.args={state:"line warning"};const o=r.bind({});o.args={state:"line info"};const c=r.bind({});c.args={state:"line light"};const l=r.bind({});l.args={state:"line dark"};var u,i,g;e.parameters={...e.parameters,docs:{...(u=e.parameters)==null?void 0:u.docs,source:{originalSource:`({
+import{D as q}from"./Alert--9bSLbzN.js";const z={title:"Components/Alert/Line Alert",tags:["autodocs"]},r=({state:T,...j})=>q({state:T,...j}),e=r.bind({});e.args={state:"line"};const a=r.bind({});a.args={state:"line primary"};const s=r.bind({});s.args={state:"line success"};const t=r.bind({});t.args={state:"line danger"};const n=r.bind({});n.args={state:"line warning"};const o=r.bind({});o.args={state:"line info"};const c=r.bind({});c.args={state:"line light"};const l=r.bind({});l.args={state:"line dark"};var u,i,g;e.parameters={...e.parameters,docs:{...(u=e.parameters)==null?void 0:u.docs,source:{originalSource:`({
   state,
   ...args
 }) => {
@@ -6,7 +6,7 @@ import{D as q}from"./Alert--9bSLbzN.js";const z={title:"Components/Alert/Line Al
     state,
     ...args
   });
-}`,...(g=(i=e.parameters)==null?void 0:i.docs)==null?void 0:g.source}}};var m,p,d;a.parameters={...a.parameters,docs:{...(m=a.parameters)==null?void 0:m.docs,source:{originalSource:`({
+}`,...(g=(i=e.parameters)==null?void 0:i.docs)==null?void 0:g.source}}};var m,d,p;a.parameters={...a.parameters,docs:{...(m=a.parameters)==null?void 0:m.docs,source:{originalSource:`({
   state,
   ...args
 }) => {
@@ -14,7 +14,7 @@ import{D as q}from"./Alert--9bSLbzN.js";const z={title:"Components/Alert/Line Al
     state,
     ...args
   });
-}`,...(d=(p=a.parameters)==null?void 0:p.docs)==null?void 0:d.source}}};var A,f,D;s.parameters={...s.parameters,docs:{...(A=s.parameters)==null?void 0:A.docs,source:{originalSource:`({
+}`,...(p=(d=a.parameters)==null?void 0:d.docs)==null?void 0:p.source}}};var A,f,D;s.parameters={...s.parameters,docs:{...(A=s.parameters)==null?void 0:A.docs,source:{originalSource:`({
   state,
   ...args
 }) => {
