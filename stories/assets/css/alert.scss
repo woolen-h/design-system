@@ -1,4 +1,5 @@
 @import  '_common.scss';
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 .alert {
     width: 100%;
@@ -98,50 +99,75 @@
 
         &-icon {
             background-color: lighten($default-color, 30%);
-            line-height: 1.5em;
+            color: $default-color;
 
-            &:before {
-                content: '';
+            i {
+                position: relative;
+                top: 2px;
                 display: inline-block;
-                vertical-align: middle;
-                width: 1.5rem;
-                height: 1.5rem;
-                background-color: $default-color;
-                border-radius: 50%;
+                font-size: 1rem;
                 margin-right: .5rem;
-                background-image: url('https://drive.google.com/uc?id=16tB66_mXXkAycM2XD9D9mVgQ5ynjZddA');
-                background-size: contain;
+                color: $default-color;
             }
 
             &.primary {
                 border-color: $primary-color;
                 background-color: lighten($primary-color, 30%);
+                color: $primary-color;
+
+                i {
+                    color: $primary-color;
+                }
             }
 
             &.success {
                 border-color: $success-color;
                 background-color: lighten($success-color, 30%);
+                color: $success-color;
+
+                i {
+                    color: $success-color;
+                }
             }
 
             &.danger {
                 border-color: $danger-color;
                 background-color: lighten($danger-color, 30%);
+                color: $danger-color;
+
+                i {
+                    color: $danger-color;
+                }
             }
 
             &.warning {
                 border-color: $warning-color;
                 background-color: lighten($warning-color, 30%);
+                color: $warning-color;
+
+                i {
+                    color: $warning-color;
+                }
             }
 
             &.info {
                 border-color: $info-color;
                 background-color: lighten($info-color, 30%);
+                color: $info-color;
+
+                i {
+                    color: $info-color;
+                }
             }
 
             &.dark {
                 border-color: $dark-color;
-                background-color: lighten($dark-color, 30%);
+                background-color: lighten($dark-color, 20%);
                 color: #fff;
+
+                i {
+                    color: #fff;
+                }
             }
 
             &.light {

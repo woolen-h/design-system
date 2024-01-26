@@ -5,45 +5,53 @@ export default {
     title: 'Alert/Icon Alert'
   };
   const Template = ({ state, ...args }) => {
-    return Alert.DefaultAlert({ state, ...args });
+    return Alert.IconAlert({ state, ...args });
   }
 
   export const Icon_Default = Template.bind({});
   Icon_Default.args = {
-    state: "icon",
+    state: "",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Primary = Template.bind({});
   Icon_Primary.args = {
-    state: "icon-primary",
+    state: "primary",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Success = Template.bind({});
   Icon_Success.args = {
-    state: "icon-success",
+    state: "success",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Danger = Template.bind({});
   Icon_Danger.args = {
-    state: "icon-danger",
+    state: "danger",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Warning = Template.bind({});
   Icon_Warning.args = {
-    state: "icon-warning",
+    state: "warning",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Info = Template.bind({});
   Icon_Info.args = {
-    state: "icon-info",
+    state: "info",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Dark = Template.bind({});
   Icon_Dark.args = {
-    state: "icon-dark",
+    state: "dark",
+    icon_name: "fi fi-ss-bell",
   };
 
   export const Icon_Light = Template.bind({});
   Icon_Light.args = {
-    state: "icon-light",
+    state: "light",
+    icon_name: "fi fi-ss-bell",
   };

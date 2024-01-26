@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -164,43 +165,62 @@ input:-webkit-autofill:active {
 }
 .alert.alert-icon {
   background-color: #d5d5d5;
-  line-height: 1.5em;
+  color: #888;
 }
-.alert.alert-icon:before {
-  content: "";
+.alert.alert-icon i {
+  position: relative;
+  top: 2px;
   display: inline-block;
-  vertical-align: middle;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #888;
-  border-radius: 50%;
+  font-size: 1rem;
   margin-right: 0.5rem;
-  background-image: url("https://drive.google.com/uc?id=16tB66_mXXkAycM2XD9D9mVgQ5ynjZddA");
-  background-size: contain;
+  color: #888;
 }
 .alert.alert-icon.primary {
   border-color: #168BF2;
   background-color: #a7d3fa;
+  color: #168BF2;
+}
+.alert.alert-icon.primary i {
+  color: #168BF2;
 }
 .alert.alert-icon.success {
   border-color: #429E46;
   background-color: #a1d8a4;
+  color: #429E46;
+}
+.alert.alert-icon.success i {
+  color: #429E46;
 }
 .alert.alert-icon.danger {
   border-color: #F22116;
   background-color: #faaba7;
+  color: #F22116;
+}
+.alert.alert-icon.danger i {
+  color: #F22116;
 }
 .alert.alert-icon.warning {
   border-color: #F2A007;
   background-color: #fcd896;
+  color: #F2A007;
+}
+.alert.alert-icon.warning i {
+  color: #F2A007;
 }
 .alert.alert-icon.info {
   border-color: #602ADE;
   background-color: #c3aef3;
+  color: #602ADE;
+}
+.alert.alert-icon.info i {
+  color: #602ADE;
 }
 .alert.alert-icon.dark {
   border-color: #222;
-  background-color: #6f6f6f;
+  background-color: #555555;
+  color: #fff;
+}
+.alert.alert-icon.dark i {
   color: #fff;
 }
 .alert.alert-icon.light {
