@@ -48,7 +48,7 @@ export default {
   export const Warning = Template.bind({});
   Warning.args = {
     state: "outline warning",
-    label: "Outline Warning Button",
+    label: "Warning Button",
     backgroundColor: "",
     border: "",
     borderColor: "",
@@ -57,7 +57,7 @@ export default {
   export const Info = Template.bind({});
   Info.args = {
     state: "outline info",
-    label: "Outline Info Button",
+    label: "Info Button",
     backgroundColor: "",
     border: "",
     borderColor: "",
@@ -66,7 +66,7 @@ export default {
   export const Light = Template.bind({});
   Light.args = {
     state: "outline light",
-    label: "Outline Light Button",
+    label: "Light Button",
     backgroundColor: "",
     border: "",
     borderColor: "",
@@ -75,7 +75,7 @@ export default {
   export const Dark = Template.bind({});
   Dark.args = {
     state: "outline dark",
-    label: "Outline Dark Button",
+    label: "Dark Button",
     backgroundColor: "",
     border: "",
     borderColor: "",
