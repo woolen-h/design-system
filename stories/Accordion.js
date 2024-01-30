@@ -73,17 +73,27 @@ export const createAccordion = () => {
   const button1 = document.createElement('button');
   // 새로운 버튼 생성하여 버튼1 변수에 추가
   button1.classList.add('accordion-button');
+  // 요소에 클래스 추가
   button1.innerText = '아코디언 1';
+  // 요소에 텍스트 추가
 
   const accordionContent1 = document.createElement('div');
+  // 아코디언 내용 div 생성
   accordionContent1.classList.add('accordion-content');
+  // 요소에 클래스 추가
   const paragraph1 = document.createElement('p');
+  // 내용이 들어갈 p 추가
   paragraph1.innerText = '아코디언 1의 내용입니다.';
+  // p 내부 내용 추가
   accordionContent1.appendChild(paragraph1);
+  // 아코디언 내용 div에 p 자식 요소로 할당
 
   accordionItem1.appendChild(button1);
+  // 아코디언 아이템1 에 버튼 요소 자식 할당
   accordionItem1.appendChild(accordionContent1);
+  // 아코디언 아이템1 에 아코디언 내용 자식 할당
 
+  // ↓ 두번째 아코디언 추가
   const accordionItem2 = document.createElement('div');
   accordionItem2.classList.add('accordion-item');
 
@@ -100,8 +110,10 @@ export const createAccordion = () => {
   accordionItem2.appendChild(button2);
   accordionItem2.appendChild(accordionContent2);
 
+  // 아코디언 요소에 아코디언 아이템 1, 2 자식 요소로 할당
   accordion.appendChild(accordionItem1);
   accordion.appendChild(accordionItem2);
 
+  // 생성된 아코디언 반환
   return accordion;
 };
