@@ -224,4 +224,41 @@ input:-webkit-autofill:active {
 }
 .card-animation .card-group .card:hover ~ .card {
   transform: translateX(8.125rem);
+}
+
+.profile-card .card {
+  display: grid;
+  grid-template-rows: 6rem 3rem 3rem 1fr;
+  grid-template-columns: 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+.profile-card .card .banner {
+  grid-row: 1/3;
+  grid-column: 1/-1;
+}
+.profile-card .card .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-card .card .display-picture {
+  grid-row: 2/4;
+  grid-column: 1/-1;
+  padding: 0 1rem;
+  z-index: 1;
+}
+.profile-card .card .display-picture img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-card .card .content {
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  padding: 1rem;
 }/*# sourceMappingURL=card.css.map */
