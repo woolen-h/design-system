@@ -9,3 +9,5 @@ export default {
 
   export const Glassmorphism = Card.glassMorphism_Card;
   export const Info = Card.InfoCard;
+  export const Animation = Card.cardAnimation;
+  

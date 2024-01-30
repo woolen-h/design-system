@@ -32,7 +32,7 @@ export const gsapMenu = () => {
     // 메뉴가 열려 있는지 여부 확인 변수 선언 및 false로 초기화
 
     function openMenu() {
-        // 메뉴를 열기 위한 함수 정의
+      // 메뉴를 열기 위한 함수 정의
       if (!isOpen) {
         // isOpen 변수가 false인 경우(열려있지 않은 경우)
         menu.classList.add("active");
@@ -41,7 +41,7 @@ export const gsapMenu = () => {
         // 문서의 본문에 side-bar 오픈 클래스 추가
 
         tl.to(menu, {
-            // GSAP 타임라인을 사용하여 menu 요소에 애니메이션 적용
+          // GSAP 타임라인을 사용하여 menu 요소에 애니메이션 적용
           x: menu.classList.contains("active") ? "0" : "100%",
           // 현재 메뉴의 상태를 확인
           // 활성화된 경우 메뉴를 왼쪽에서 오른쪽으로 사라짐
@@ -49,12 +49,12 @@ export const gsapMenu = () => {
         });
 
         gsap.fromTo(
-            // GSAP의 fromTo 메서드 사용
+          // GSAP의 fromTo 메서드 사용
           menuItems,
           // 메뉴 아이템에 대한 애니메이션 적용
           {
             x: 150,
-            // 오른쪽에서 
+            // 오른쪽에서
           },
           {
             x: 0,
@@ -76,7 +76,7 @@ export const gsapMenu = () => {
       }
     }
     function closeMenu() {
-        // 메뉴를 닫기 위한 함수 정의
+      // 메뉴를 닫기 위한 함수 정의
       menu.classList.remove("active");
       // 메뉴에서 active 클래스 제거하여 비활성화
       document.body.classList.remove("sidebar-open");
@@ -96,7 +96,7 @@ export const gsapMenu = () => {
     }
 
     gsap.to(menuBtn, {
-        // GSAP을 이용하여 메뉴버튼 요소의 애니메이션 설정
+      // GSAP을 이용하여 메뉴버튼 요소의 애니메이션 설정
       scrollTrigger: {
         // 특정 지점 스크롤시 애니메이션 발생
         trigger: document.documentElement,
@@ -109,12 +109,12 @@ export const gsapMenu = () => {
         // 스크롤 트리거의 종료 위치 지정
         // 뷰포트의 높이만큼 스크롤 되었을 때 애니메이션 트리거
         onLeave: () => {
-            // 스크롤이 특정 지점을 벗어나면 실행되는 콜백함수
+          // 스크롤이 특정 지점을 벗어나면 실행되는 콜백함수
           gsap.to(menuBtn, { scale: 1 });
           // 메뉴 버튼의 크기를 기본 크기로 변경
         },
         onEnterBack: () => {
-            // 스크롤이 특정 지점에 들어오면 실행되는 콜백함수
+          // 스크롤이 특정 지점에 들어오면 실행되는 콜백함수
           gsap.to(menuBtn, { scale: 0 });
           // 메뉴 버튼의 크기 축소
           closeMenu();
@@ -190,52 +190,52 @@ export const sideBar = () => {
 
   return (
     '<section class="side-bar">' +
-      '<nav>' +
-        '<div class="sidebar-header">' +
-          '<a class="logo-wrapper">' +
-            '<i class="fi fi-brands-github"></i>' +
-            '<h2 class="hidden">LOGO</h2>' +
-          '</a>' +
-          '<button class="toggle-btn">' +
-            '<i class="fi fi-br-angle-double-right"></i>' +
-          '</button>' +
-        '</div>' +
-        '<div class="sidebar-links">' +
-          '<a class="link active">' +
-            '<i class="fi fi-br-house-blank"></i>' +
-            '<span class="hidden">Home</span>' +
-          '</a>' +
-          '<a class="link">' +
-            '<i class="fi fi-br-folder"></i>' +
-            '<span class="hidden">Projects</span>' +
-          '</a>' +
-          '<a class="link">' +
-            '<i class="fi fi-br-dice-d6"></i>' +
-            '<span class="hidden">Dashboard</span>' +
-          '</a>' +
-          '<a class="link">' +
-            '<i class="fi fi-br-list-check"></i>' +
-            '<span class="hidden">Tasks</span>' +
-          '</a>' +
-        '</div>' +
-        '<div class="sidebar-bottom">' +
-          '<div class="sidebar-links">' +
-            '<a class="link">' +
-              '<i class="fi fi-br-settings-sliders"></i>' +
-              '<span class="hidden">Settings</span>' +
-            '</a>' +
-          '</div>' +
-          '<div class="user-profile">' +
-            '<div class="user-avatar">' +
-              '<img src="https://images.unsplash.com/photo-1588026193712-31163b26c043?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />' +
-            '</div>' +
-            '<div class="user-details hidden">' +
-              '<p class="username">Jane Doe</p>' +
-              '<p class="user-email">janedoe@gmail.com</p>' +
-            '</div>' +
-          '</div>' +
-        '</div>' +
-      '</nav>' +
-    '</section>'
+    "<nav>" +
+    '<div class="sidebar-header">' +
+    '<a class="logo-wrapper">' +
+    '<i class="fi fi-brands-github"></i>' +
+    '<h2 class="hidden">LOGO</h2>' +
+    "</a>" +
+    '<button class="toggle-btn">' +
+    '<i class="fi fi-br-angle-double-right"></i>' +
+    "</button>" +
+    "</div>" +
+    '<div class="sidebar-links">' +
+    '<a class="link active">' +
+    '<i class="fi fi-br-house-blank"></i>' +
+    '<span class="hidden">Home</span>' +
+    "</a>" +
+    '<a class="link">' +
+    '<i class="fi fi-br-folder"></i>' +
+    '<span class="hidden">Projects</span>' +
+    "</a>" +
+    '<a class="link">' +
+    '<i class="fi fi-br-dice-d6"></i>' +
+    '<span class="hidden">Dashboard</span>' +
+    "</a>" +
+    '<a class="link">' +
+    '<i class="fi fi-br-list-check"></i>' +
+    '<span class="hidden">Tasks</span>' +
+    "</a>" +
+    "</div>" +
+    '<div class="sidebar-bottom">' +
+    '<div class="sidebar-links">' +
+    '<a class="link">' +
+    '<i class="fi fi-br-settings-sliders"></i>' +
+    '<span class="hidden">Settings</span>' +
+    "</a>" +
+    "</div>" +
+    '<div class="user-profile">' +
+    '<div class="user-avatar">' +
+    '<img src="https://images.unsplash.com/photo-1588026193712-31163b26c043?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />' +
+    "</div>" +
+    '<div class="user-details hidden">' +
+    '<p class="username">Jane Doe</p>' +
+    '<p class="user-email">janedoe@gmail.com</p>' +
+    "</div>" +
+    "</div>" +
+    "</div>" +
+    "</nav>" +
+    "</section>"
   );
 };

@@ -45,10 +45,12 @@ export const InfoCard = () => {
 
 export const cardAnimation = () => {
   return (
+    '<section class="card-animation">' +
     '<div class="card-group">' +
     '<article class="card"></article>' +
     '<article class="card"></article>' +
     '<article class="card"></article>' +
-    "</div>"
+    "</div>" +
+    '</section>'
   );
 };
